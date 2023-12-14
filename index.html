@@ -141,19 +141,15 @@
       .contentRow1 {
         display: inline-flex;
       }
-      
-      .contentRow2 {
-        display: inline-flex;
-        position: relative;
-        top: 26px
-      }
+
+      /*Code from https://medium.com/@axel/mosaic-layouts-with-css-grid-d13f4e3ed2ae*/
+      .contentMosaic {}
 
       .contentcard {
         width: 664px;
-        height: 495px;
+        height: 642px;
         background: white;
         margin-right: 26;
-        display: inline-flex
       }
 
       .contentcard img,
@@ -162,11 +158,8 @@
       }
 
       .contentcard h4 {
-        width: 234px;
-      }
-
-      .contentcard img {
-        margin-left: 44.21
+        width: 647px;
+        height: 229px;
       }
 
       .topnav a:hover {
@@ -199,7 +192,29 @@
       </div>
     </div>
 
-    
+    <div class="contentRow1">
+      <div class="contentCard">
+        <h4>
+          09.11 — 2023<br>baby alpaca in the park<br>shot on canon eos 90d
+        </h4>
+        <img src="https://i.imgur.com/obQ6XaZ.png" alt="baby alpaca">
+      </div>
+
+      <div class="contentCard">
+        <h4>
+          09.09 — 2023<br>inside the cats eye<br>shot on canon eos 90d
+        </h4>
+        <img src="https://i.imgur.com/7AA7u5q.png" alt="cat eye">
+      </div>
+    </div>
+
+    <div class="contentMosaic">
+      <div class="contentTile">
+
+      </div>
+    </div>
+
+
 
     <div class="footer">
       <img src="https://i.imgur.com/GiyKunZ.png" alt="biglogo">
