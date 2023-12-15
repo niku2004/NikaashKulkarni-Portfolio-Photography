@@ -11,7 +11,7 @@
         margin-top: 43px;
         margin-left: 70;
         width: 1440;
-        height: 1807px;
+        height: 2636px;
       }
 
       /*Text Styles*/
@@ -142,24 +142,34 @@
         display: inline-flex;
       }
 
-      /*Code from https://medium.com/@axel/mosaic-layouts-with-css-grid-d13f4e3ed2ae*/
-      .contentMosaic {}
-
-      .contentcard {
+      .ccRow1 {
         width: 664px;
         height: 642px;
         background: white;
         margin-right: 26;
       }
 
-      .contentcard img,
+      .ccRow1 img,
       h4 {
         margin: 8
       }
 
-      .contentcard h4 {
+      .ccRow1 h4 {
         width: 647px;
         height: 229px;
+      }
+      
+      .contentcardHori {
+        width: 664px;
+height: 495px;
+        background: white;
+        position: relative;
+      }
+
+      .contentAllMosaic {
+        display: inline-flex;
+        position: relative;
+        top: 26
       }
 
       .topnav a:hover {
@@ -193,14 +203,14 @@
     </div>
 
     <div class="contentRow1">
-      <div class="contentCard">
+      <div class="ccRow1">
         <h4>
           09.11 — 2023<br>baby alpaca in the park<br>shot on canon eos 90d
         </h4>
         <img src="https://i.imgur.com/obQ6XaZ.png" alt="baby alpaca">
       </div>
 
-      <div class="contentCard">
+      <div class="ccRow1">
         <h4>
           09.09 — 2023<br>inside the cats eye<br>shot on canon eos 90d
         </h4>
@@ -208,13 +218,28 @@
       </div>
     </div>
 
-    <div class="contentMosaic">
-      <div class="contentTile">
+    <div class="contentAllMosaic">
+      <div class="contentMosaic1">
+        <div class="contentCardHori">
+          <h4>
+            09.12 — 2023<br/>airborne birdy<br/>shot on canon eos 90d
+          </h4>
+        </div>
+        <div class="contentCardVert" style="position: relative; top: 26">
 
+        </div>
+      </div>
+
+      <div class="contentMosaic2">
+        <div class="contentCardVert">
+
+        </div>
+        
+        <div class="contentCardHori" style="position: relative; top: 26">
+
+        </div>
       </div>
     </div>
-
-
 
     <div class="footer">
       <img src="https://i.imgur.com/GiyKunZ.png" alt="biglogo">
